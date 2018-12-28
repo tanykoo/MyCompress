@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tanykoo.view.pww.controller.PwWindowCtrl">
+   <center>
+      <SplitPane id="spilt" fx:id="spilt" dividerPositions="0.3010033444816054" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="30.0" prefHeight="336.0" prefWidth="177.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="326.0" />
+        </items>
+      </SplitPane>
+   </center>
+   <top>
+      <VBox prefHeight="77.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="600.0" />
+            <Separator pickOnBounds="false" prefWidth="200.0" />
+            <HBox prefHeight="0.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="but" mnemonicParsing="false" onAction="#hello" prefHeight="23.0" prefWidth="120.0" text="Button" />
+                   <TextField maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="388.0" style="-fx-background-image: url('/image/11.png') ; -fx-background-repeat: no-repeat; -fx-background-position: 3,10; -fx-start-margin: 0;" text="鼎折覆餗">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                   </TextField>
+
+
+                  <ComboBox fx:id="chose" depthTest="ENABLE" editable="true" prefWidth="150.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
