@@ -1,6 +1,5 @@
 package com.tanykoo.compress;
 
-import org.apache.commons.compress.archivers.ArchiveEntry;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

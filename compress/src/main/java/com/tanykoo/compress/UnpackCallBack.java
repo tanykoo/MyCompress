@@ -14,6 +14,18 @@ public interface UnpackCallBack {
      */
     void unpackProgressChanged(long count,long total);
 
+    /**
+     * 当选择覆盖时
+     * @return
+     */
+    boolean isCover(ArchiveEntry archiveEntry);
 
+    boolean isMkdirs(ArchiveEntry archiveEntry);
+
+    /**
+     *
+     * @return
+     */
+    boolean isJump(ArchiveEntry archiveEntry);
 
 }

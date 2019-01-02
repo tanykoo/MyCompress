@@ -1,15 +1,22 @@
 package com.tanykoo.compress;
 
-import org.apache.commons.compress.archivers.ArchiveEntry;
 
 /**
+ * 归档文件提取器
  * @Author ThinkPad
  * Created : 2018-12-28 17:14
  * @Since
  */
-public interface Extractor {
-    boolean extract(ArchiveFile archiveFile, ArchiveEntry archiveEntry,String destDirectory);
-    boolean extract(ArchiveFile archiveFile, String destDirectory);
+public interface Extractor<T extends ArchiveEntry> {
+    /**
+     *
+     * @param archiveFile
+     * @param archiveEntry
+     * @param destDirectory
+     * @return
+     */
+    void extract(ArchiveFile archiveFile, T[] archiveEntry,String destDirectory);
+    void extract(ArchiveFile archiveFile, String destDirectory);
     void addUnpackCallBack(UnpackCallBack unpackCallBack);
-    void setCrtDir(boolean flag);
+
 }
