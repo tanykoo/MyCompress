@@ -1,8 +1,6 @@
 package com.tanykoo.bootstrap;
 
 import com.tanykoo.fxml.LoadUtil;
-import com.tanykoo.util.SpringUtils;
-import com.tanykoo.view.pww.controller.PwWindowCtrl;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -20,17 +18,15 @@ public class BootStrap extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        System.out.println(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent parent = null;
-//        Dialog dialog = new Dialog();
-//
-//        dialog.show();
 
         try {
-            parent = LoadUtil.load("/layout/pwWindow.fxml");
+            parent = LoadUtil.load("/layout/main.fxml");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -40,16 +36,16 @@ public class BootStrap extends Application {
         Scene scene = new Scene(parent);
         primaryStage.setScene(scene);
 
-//        primaryStage.setResizable(false);
-        primaryStage.setTitle("输入密码");
+        primaryStage.setTitle("解压");
         primaryStage.setOnCloseRequest(event -> {
                 System.exit(0);
             }
         );
 
-        PwWindowCtrl pwWindowCtrl = SpringUtils.getBean(PwWindowCtrl.class);
+
+//        PwWindowCtrl pwWindowCtrl = SpringUtils.getBean(PwWindowCtrl.class);
         primaryStage.show();
 
-        pwWindowCtrl.hello();
+//        pwWindowCtrl.hello();
     }
 }

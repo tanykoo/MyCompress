@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Button?>
+<GridPane fx:id="rootLayout" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="com.tanykoo.view.pww.controller.MainCtrl">
+    <padding>
+        <Insets bottom="16" left="14" right="15" top="13" />
+    </padding>
+    <Button fx:id="choserButton" onAction="#chooser" text="search" GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+
+    <TextField fx:id="choser" editable="false"  promptText="请选择压缩文件" minWidth="400" GridPane.rowIndex="0"  GridPane.columnIndex="0" />
+
+    <TextField fx:id="destchoser" editable="false" onAction="#destchooser" promptText="请选择解压目录" GridPane.rowIndex="1" minWidth="200"/>
+    <Button fx:id="choserButton2" onAction="#destchooser" text="search" GridPane.rowIndex="1"  GridPane.columnIndex="1"/>
+
+    <Button fx:id="compress" text="解压" onAction="#compress" GridPane.rowIndex="2"/>
+</GridPane>

@@ -1,0 +1,34 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="MyCompress_main">
+    <output-path>$PROJECT_DIR$/out/artifacts/MyCompress_main</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.tanykoo.bootstrap.BootStrap" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="MyCompress_main.jar">
+        <element id="module-output" name="MyCompress_main" />
+      </element>
+      <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.0.5.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.0.5.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.0.5.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.0.5.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.0.5.RELEASE" />
+      <element id="library" level="project" name="Gradle: com.github.junrar:junrar:3.1.0" />
+      <element id="library" level="project" name="Gradle: org.apache.commons:commons-compress:1.18" />
+      <element id="library" level="project" name="Gradle: org.osgi:org.osgi.core:6.0.0" />
+      <element id="library" level="project" name="Gradle: org.tukaani:xz:1.8" />
+      <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
+      <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+      <element id="library" level="project" name="Gradle: org.apache.commons:commons-vfs2:2.2" />
+      <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+    </root>
+  </artifact>
+</component>

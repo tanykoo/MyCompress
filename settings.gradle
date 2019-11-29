@@ -1,3 +1,4 @@
 rootProject.name = 'MyCompress'
 include 'compress'
+include 'DateTools'
 

@@ -11,7 +11,7 @@ import org.apache.commons.logging.LogFactory;
 public class ExtractorFactory {
     private static Log logger = LogFactory.getLog(ExtractorFactory.class);
 
-    public Extractor createExtractor(ArchiveType archiveType){
-        return archiveType.get();
+    public static AbstractExtractor createExtractor(ArchiveFile archiveFile){
+        return archiveFile.getType().get();
     }
 }

@@ -66,7 +66,7 @@ public class PwWindowCtrl {
 //        t.setStyle("-fx-background-image: url('/image/11.png') ; -fx-background-repeat: no-repeat; -fx-background-position: 3,10;");
 //        t.setPadding(new Insets(4,4,7,25));
 //        but.setGraphic(new ImageView(new Image("/image/11.png")));
-
+        t.setStyle("-fx-background-image: url('/image/11.png') ; -fx-background-repeat: no-repeat; -fx-background-position: 3,10;");
 //        t.setBackground(new Background(new BackgroundFill(new ImagePattern(new Image("/image/11.png")),new CornerRadii(0,false),new Insets(4,0,4,5))));
     }
 

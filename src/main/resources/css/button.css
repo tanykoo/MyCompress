@@ -1,0 +1,4 @@
+.top-menu-button{
+    -fx-border-radius: 10;
+    -fx-start-margin: inherit 10 10 10 10;
+}

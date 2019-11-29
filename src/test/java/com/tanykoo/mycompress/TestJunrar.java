@@ -23,7 +23,7 @@ public class TestJunrar {
         FileOutputStream outputStream = null;
         try {
             log.info(Integer.MAX_VALUE);
-            SevenZFile sevenZFile = new SevenZFile(new File("E:\\电影\\电影.7z"));
+            SevenZFile sevenZFile = new SevenZFile(new File("C:\\Users\\ThinkPad\\Desktop\\Desktop.7z"));
             byte content[] = new byte[1024];
             int count = 0;
             int i = 0;
@@ -31,7 +31,7 @@ public class TestJunrar {
             SevenZArchiveEntry archiveEntry = sevenZFile.getNextEntry();
             while (archiveEntry != null){
 
-                outputStream = new FileOutputStream(new File("D:\\新建文件夹\\" + archiveEntry.getName()), true);
+                outputStream = new FileOutputStream(new File("D:\\新建文件夹\\" + archiveEntry.getName()),true);
                 long size = archiveEntry.getSize();
                 while(size > 0){
                     if(size > 1024){
@@ -45,8 +45,9 @@ public class TestJunrar {
                     outputStream.write(content);
                 }
                 outputStream.close();
-
+                System.out.println(archiveEntry.getName());
                 archiveEntry = sevenZFile.getNextEntry();
+
             }
         } catch (PasswordRequiredException e) {
             log.error("file with password");
@@ -54,11 +55,11 @@ public class TestJunrar {
         } catch (IOException e){
             e.printStackTrace();
         } finally {
-            try {
-                outputStream.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+//            try {
+////                outputStream.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
         }
     }
 }
